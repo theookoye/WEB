@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grid System</title>
+    <link rel="stylesheet" href="../static/css/materialize.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="stylesheet" href="../static/css/iconfont/material-icons.css">
+</head>
+
+<body class="blue">
+    <nav class="black">
+        <div class="container">
+            <div class="nav-wrapper">
+                <a href="" class="brand-logo left">Materialize</a>
+                <a href="" class="sidenav-trigger right" data-target="mobile-demo">
+                    <i class="material-icons">menu</i>
+                </a>
+
+                <ul class="nav-mobile hide-on-med-and-down right">
+                    <li>
+                        <a href="{{url_for('home')}}" class="">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a href="" class="">
+                            Sign Up
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <a href="{{url_for('home')}}" class="">
+                <i class="material-icons">home</i> Home
+            </a>
+        </li>
+        <li>
+            <a href="" class="">
+                <i class="material-icons">edit</i> Sign Up
+            </a>
+        </li>
+    </ul>
+
+    <br>
+    <br>
+    <hr>
+
+    <div class="row">
+        <div class="col m4 offset-m4 s6 offset-s3">
+            <i class="material-icons large left">view_week</i>
+            <h3>BUILD Technologies</h3>
+        </div>
+    </div>
+
+
+    <!--TRYING A CONTAINER-->
+    <div class="row ">
+        <br>
+        <div class="col l4 m4 s8 offset-l4 offset-m4 offset-s2">
+            <div class="box center white">
+                <h3>Login</h3>
+                <br>
+                <div class="row">
+                    <div class="col m6 s6">
+                        <a class="btn btn-large waves-effect grey">
+                            <i class="material-icons large">group</i>
+                        </a>
+                    </div>
+                    <div class="col m6 s6">
+                        <a class="btn btn-large waves-effect red">
+                            <i class="material-icons large">layers</i>
+                        </a>
+                    </div>
+                </div>
+                <br>
+
+                <div class="row">
+                    <div class="col m8 s12 offset-m2">
+
+                        <label for="email" class="left">
+                            <h6>Email</h6>
+                        </label>
+                        <input type="email" class="input-field" id="email">
+                    </div>
+                    <div class="col m8 s12 offset-m2">
+
+                        <label for="password" class="left">
+                            <h6>Password</h6>
+                        </label>
+                        <input type="password" class="input-field" id="password">
+                    </div>
+                </div>
+
+                <br>
+
+                <div class="row">
+                    <div class="col m6 s4 offset-m3 offset-s4">
+                        <a href="" class="btn btn-large waves-effect waves-blue light-blue" style="width:100%">
+                            Login
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="fixed-action-btn">
+        <button class="btn-floating btn-large black waves-effect waves-blue">
+            <i class="material-icons large">sms</i>
+        </button>
+    </div>
+
+    <footer class="page-footer black">
+        <div class="footer-copyright">
+            <label class="left">Build Technologies &copy; 2018.</label>
+            <div class="container">
+                <label class="right">
+                    Inspired by
+                    <a class="orange-text text-lighten-3">Build</a>
+                </label>
+            </div>
+        </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    <script src="../static/js/jquery-2.1.1.js"></script>
+    <script src="../static/js/materialize.js"></script>
+    <script>
+        M.AutoInit();
+    </script>
+</body>
+
+</html>
