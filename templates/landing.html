@@ -91,9 +91,15 @@
     <!--CAROUSEL-->
     <div class="row">
         <div class="carousel carousel-slider">
-            <a href="" class="carousel-item">
+            <div class="carousel-item" id="container">
                 <img src="../static/img/IMG_1463.png">
-            </a>
+                <div class="" id="centered">
+                    <h1 class="purple-text accent-4 white">
+                        <b>Learn </b>
+                        <b id="hello"></b>
+                    </h1>
+                </div>
+            </div>
         </div>
     </div>
 
@@ -217,10 +223,19 @@
     </footer>
 
     <!--SCRIPTS-->
+    <script src="../static/js/typed.js"></script>
     <script src="../static/js/jquery-2.1.1.js"></script>
     <script src="../static/js/materialize.js"></script>
     <script>
         M.AutoInit();
+    </script>
+    <script>
+        var hello = new Typed('#hello', {
+            strings: ['Kotlin', 'Java', 'Android', 'ASP.net', 'VB.net', 'C#', 'Javascript', 'Python', 'Xamarin'],
+            typeSpeed: 200,
+            backspaceSpeed: 500,
+            loop: true
+        });
     </script>
 </body>
 
