@@ -19,6 +19,7 @@
   text-align: center;
 }
 
-.carousel {
+.carousel,
+.carousel-item {
   height: 820px !important;
 }
