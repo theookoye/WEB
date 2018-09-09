@@ -29,10 +29,13 @@
                             </a>
                         </li>
                     </ul>
+                    <a href="" class="sidenav-trigger btn-medium black right" data-target="mobile-demo">
+                        <i class="material-icons">menu</i>
+                    </a>
                 </div>
                 <div class="col l4 m6 s12 offset-m1">
 
-                    <ul>
+                    <ul class="nav-mobile hide-on-medium-and-down">
                         <li>
                             <a href="">Products</a>
                         </li>
@@ -49,7 +52,7 @@
                     </ul>
                 </div>
                 <div class="col l2 m6 s12 offset-l2">
-                    <ul>
+                    <ul class="nav-mobile hide-on-small-only">
                         <li>
                             <a href="{{url_for('login')}}">Login</a>
                         </li>
@@ -61,13 +64,35 @@
             </div>
         </div>
     </nav>
+
+    <!--SIDE NAVIGATION MOBILE -->
+    <ul class="sidenav" id="mobile-demo">
+        <li>
+            <a href="">Products</a>
+        </li>
+        <li>
+            <a href="">Services</a>
+        </li>
+        <li>
+            <a href="">Customers</a>
+        </li>
+        <li>
+            <a href="">Pricing</a>
+        </li>
+        <li>
+            <a href="{{url_for('login')}}">Login</a>
+        </li>
+        <li>
+            <a href="{{url_for('login')}}">Sign Up</a>
+        </li>
+    </ul>
     <br>
 
     <!--CAROUSEL-->
-    <div class="row box">
+    <div class="row">
         <div class="carousel carousel-slider">
-            <a href="#one!" class="carousel-item">
-                <img src="../static/img/1200px-Xamarin-logo.svg.png">
+            <a href="" class="carousel-item">
+                <img src="../static/img/IMG_1463.png">
             </a>
         </div>
     </div>
@@ -128,7 +153,7 @@
     <!--POPULAR TOOLS-->
     <div class="row grey darken-4">
         <div class="container">
-            <h3 class="white-text center-align">Popular</h3>
+            <h3 class="white-text center-align">Popular Platforms</h3>
             <div class="row">
                 <div class="col l4 m6 s10">
                     <img src="../static/img/Python_96px.png">

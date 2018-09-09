@@ -12,26 +12,38 @@
 </head>
 
 <body class="blue">
-    <nav class="black">
-        <div class="container">
-            <div class="nav-wrapper">
-                <a href="" class="brand-logo left">Materialize</a>
-                <a href="" class="sidenav-trigger right" data-target="mobile-demo">
-                    <i class="material-icons">menu</i>
-                </a>
+    <nav class="black lighten-4">
+        <div class="nav-wrapper">
+            <div class="row">
+                <div class="col m6">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="material-icons large">view_week</i>
+                                <h5></h5>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <h5>Build</h5>
+                            </a>
+                        </li>
+                    </ul>
+                    <a href="" class="sidenav-trigger btn-medium black right" data-target="mobile-demo">
+                        <i class="material-icons">menu</i>
+                    </a>
+                </div>
 
-                <ul class="nav-mobile hide-on-med-and-down right">
-                    <li>
-                        <a href="{{url_for('home')}}" class="">
-                            Home
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="">
-                            Sign Up
-                        </a>
-                    </li>
-                </ul>
+                <div class="col m2 offset-m4">
+                    <ul class="nav-mobile hide-on-small-only">
+                        <li>
+                            <a href="{{url_for('login')}}">Login</a>
+                        </li>
+                        <li>
+                            <a href="{{url_for('login')}}">Sign Up</a>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </div>
     </nav>
